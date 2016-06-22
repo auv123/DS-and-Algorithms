@@ -49,10 +49,10 @@ public class Anagram_Pangram {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(isPangram("The quick brown fox jumps over the lazy dog"));
-		System.out.println(isPangram("The quick brown fox jumps over the lazy do"));
-		System.out.println(isAnagram("Iceman", "Cinema"));
-		System.out.println(isAnagram("iceman", "Cinema"));
+		System.out.println(isPangram("The quick brown fox jumps over the lazy dog")); //is pangram
+		System.out.println(isPangram("The quick brown fox jumps over the lazy do"));  //not a pangram
+		System.out.println(isAnagram("Iceman", "Cinema"));  //true
+		System.out.println(isAnagram("iceman", "Cinema")); //true
 
 	}
 
