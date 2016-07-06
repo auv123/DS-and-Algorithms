@@ -40,5 +40,10 @@ public class BinarySearchTree {
         }
         return curr;
     }
+    
+    public int findHeightOfTree(Node node){
+		if(node == null) return 0;
+		return Math.max(findHeightOfTree(node.left), findHeightOfTree(node.right)) + 1;
+	}
 
 }
