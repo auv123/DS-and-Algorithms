@@ -45,5 +45,11 @@ public class BinarySearchTree {
 		if(node == null) return 0;
 		return Math.max(findHeightOfTree(node.left), findHeightOfTree(node.right)) + 1;
 	}
+    
+    public boolean areEqual(Node n1, Node n2){
+		if(n1 == n2) return true;
+		if(n1 == null || n2 == null) return false;
+		return n1.data == n2.data && areEqual(n1.left, n2.left) && areEqual(n1.right, n2.right);
+	}
 
 }
